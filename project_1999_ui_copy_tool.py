@@ -67,17 +67,13 @@ def copy_and_rename():
 
     if source_file == destination_file:
         success_label.config(text="Please select a different destination character", fg="red")
-        print(f"An error occurred while copying and renaming the file: {e}")
     else:       
         try:
             shutil.copyfile(source_file, destination_file)
             shutil.copyfile(source_file_2, destination_file_2)
             success_label.config(text="Success!", fg="green")
-            print(f"UI files successfully copied.")
         except Exception as e:
             success_label.config(text="Error!", fg="red")
-            print(f"An error occurred while copying and renaming the file: {e}")
-
 
 def select_directory():
     directory_path = filedialog.askdirectory(initialdir=load_last_directory())
