@@ -209,3 +209,4 @@ try:
 except KeyboardInterrupt:
     close_window()
 
+# run pyinstaller --onefile --noconsole your_script.py to rebuild executable
