@@ -209,4 +209,4 @@ try:
 except KeyboardInterrupt:
     close_window()
 
-# run pyinstaller --onefile --noconsole your_script.py to rebuild executable
+# run pyinstaller --onefile --noconsole project_1999_ui_copy_tool.py to rebuild executable
